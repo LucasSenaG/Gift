@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARABÉNS!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="meuAudio">
+        <source src="confete.mp3" type="audio/mpeg">
+    </audio>      
+
+    <div id="background">
+        <img src="https://i.pinimg.com/750x/08/be/89/08be89f06f77ac9eeac96580a41cca40.jpg">
+    </div>
+
+    <header>
+        <h1>PARABÉNS, DUDA!</h1>
+    </header>
+    
+    <section id="msg">
+        <h4>VOCÊ ACABA DE GANHAR UM PACOTE PARA INICAR SUA AUTO ESCOLA. 
+            SEGURAA!!!
+        </h4>
+    </section>
+
+    <div id="carro">
+        <img src="https://yata.s3-object.locaweb.com.br/52001d41cd4c3224aee07aeeb9e5aaea02b6b18c8ba4988b6278cf896d811413">
+    </div>
+
+    <footer>
+        <h5>DATA DE LIBERAÇÃO: JANEIRO 2024</h5>
+    </footer>
+
+    <script src="https://www.napoleon.com.br/codigos/confetti.min.js"></script>
+    <script>confetti.start()</script>
+    <script>setTimeout(function(){confetti.stop();},1000000)</script>
+
+    <script>
+        window.addEventListener('load', function () {
+            var meuAudio = document.getElementById('meuAudio');
+            meuAudio.play();
+        }); 
+    </script>
+
+</body>
+</html>
